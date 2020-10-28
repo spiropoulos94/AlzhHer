@@ -2,13 +2,6 @@
 
 @import "./variables.scss";
 
-/**
-* Template Name: Medilab - v2.0.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -735,6 +728,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about-img {
+  width: 100%;
+}
+
 .about .icon-boxes h4 {
   font-size: 18px;
   color: #4b7dab;
