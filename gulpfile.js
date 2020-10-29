@@ -36,9 +36,10 @@ function css(done) {
     src(['assets/scss/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('styles.css'))
+        .pipe(cssmin({keepBreaks: false}))
+        .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write())
-        .pipe(dest(assetsDev + 'css'))
+        .pipe(dest('assets/css/min'))
         .pipe(browserSync.stream());
         done()
 }
@@ -54,7 +55,7 @@ function cssbuild(done) {
 
 // CSS export: compressed
 function cssminTask(done) {
-    src([assetsDev + 'css/skeleton.css'])
+    src(assetsProduction)
         .pipe(cssmin({keepBreaks: false}))
         .pipe(rename({suffix: '.min'}))
         .pipe(dest(assetsProduction + 'css/'));
@@ -75,5 +76,5 @@ exports.default = series(css, watchFiles);
 // exports.modules = modules;
 exports.css = css;
 exports.cssbuild = cssbuild;
-// exports.cssmin = cssminTask;
+exports.cssmin = cssminTask;
 // exports.clean = clean;
