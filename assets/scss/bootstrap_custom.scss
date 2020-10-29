@@ -1,7 +1,9 @@
 //TODO ftiakse ena neo stylesheet bootstrap_custom.scss pou tha ftiaksei ena bootstrap_custom.min.css (theming)
-@import "node_modules/bootstrap/scss/bootstrap";
+
 @import "variables";
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "styles";
+
 
 
 
@@ -11,4 +13,5 @@ $theme-colors: (
 );
 
 $font-family-sans-serif: $font-family;
+
 

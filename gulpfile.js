@@ -9,8 +9,8 @@ const del = require('del'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     cssmin = require('gulp-cssmin'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat');
+    rename = require('gulp-rename');
+    // concat = require('gulp-concat');
 
 const browserSync = require("browser-sync").create();
 
@@ -39,7 +39,7 @@ function css(done) {
         .pipe(cssmin({keepBreaks: false}))
         .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write())
-        .pipe(dest('assets/css/min'))
+        .pipe(dest('./assets/css'))
         .pipe(browserSync.stream());
         done()
 }
@@ -58,7 +58,7 @@ function cssminTask(done) {
     src(assetsProduction)
         .pipe(cssmin({keepBreaks: false}))
         .pipe(rename({suffix: '.min'}))
-        .pipe(dest(assetsProduction + 'css/'));
+        .pipe(dest(assetsDev + 'css'));
     done();
 }
 
