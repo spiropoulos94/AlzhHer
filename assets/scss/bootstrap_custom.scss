@@ -5,6 +5,9 @@
 
 //To modify an existing color in our $theme-colors map, add the following to your custom Sass file:
 
+//TODO μεσα στο map θα μπουν εξτρα επιλογές και οπου υπάρχει χρωμα καταχωρημενο με κωδικο θα περαστει ως $primary και $secondary color. Etsi wste na allazoun ola mazi
+//apo to variables.
+
 $theme-colors: (
         "primary": $primary,
         "secondary": $secondary
