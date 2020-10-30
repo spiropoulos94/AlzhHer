@@ -1,0 +1,33 @@
+@import "variables";
+
+//@import 'styles';
+
+
+
+
+body {
+  font-family: $font-family;
+  color: #444444;
+}
+
+a {
+  color: #1977cc;
+}
+
+a:hover {
+  color: #3291e6;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+}
+
+
+//
+//$theme-colors: (
+//        "primary": $primary,
+//        "secondary": $secondary
+//);
+//
+//$font-family-sans-serif: $font-family;
