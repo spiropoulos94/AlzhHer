@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:
-    url('fonts/icomoon.ttf?romk75') format('truetype'),
-    url('fonts/icomoon.woff?romk75') format('woff'),
-    url('fonts/icomoon.svg?romk75#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bmfu09');
+  src:  url('fonts/icomoon.eot?bmfu09#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bmfu09') format('truetype'),
+    url('fonts/icomoon.woff?bmfu09') format('woff'),
+    url('fonts/icomoon.svg?bmfu09#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +13,6 @@
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -83,4 +83,10 @@ i {
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cross:before {
+  content: "\ea0f";
 }

@@ -3,10 +3,11 @@
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 
+//To modify an existing color in our $theme-colors map, add the following to your custom Sass file:
 
 $theme-colors: (
-        "primary": red,
-        "secondary": green
+        "primary": $primary,
+        "secondary": $secondary
 );
 
 $font-family-sans-serif: $font-family;
