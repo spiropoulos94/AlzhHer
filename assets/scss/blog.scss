@@ -92,7 +92,6 @@ $white_color:#fff;
       background: #acacac;
       right: -12px;
       top: 7px;
-
     }
 
     @media(max-width:1199px) {
@@ -228,22 +227,17 @@ $white_color:#fff;
       margin-bottom: 15px;
 
       a {
-        // color: $pfont;
         font-size: 12px;
       }
     }
 
     h4 {
       font-size: 18px;
-      // color: $title-color;
       border-bottom: 1px solid #eeeeee;
       margin-bottom: 0px;
       padding-bottom: 20px;
       @include transform_time(.5s);
 
-      &:hover {
-        // // color: $baseColor;
-      }
     }
 
     p {
@@ -278,7 +272,6 @@ $white_color:#fff;
       }
 
       &.active {
-        // background: $baseColor;
       }
     }
   }
@@ -301,7 +294,6 @@ $white_color:#fff;
       span {
         width: 70%;
         height: 3px;
-        // background: $title-color;
         position: absolute;
         left: 0px;
         bottom: 0px;
@@ -311,7 +303,6 @@ $white_color:#fff;
           position: absolute;
           right: -10px;
           bottom: 0px;
-          // background: $title-color;
           color: #fff;
           padding: 0px 5px;
         }
@@ -329,16 +320,11 @@ $white_color:#fff;
       font-weight: 600;
       margin-bottom: 15px;
       cursor: pointer;
-
-      &:hover {
-        // // color: $title-color;
-      }
     }
 
     p {
       font-size: 14px;
       line-height: 24px;
-      // color: $pfont;
       font-weight: 300;
       margin-bottom: 0px;
     }

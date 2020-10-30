@@ -4,12 +4,10 @@ TODO bootstrap custom export, I see none DONE
 TODO clean up main.js DONE
 TODO remove unused files e.g. changelog.txt DONE
 TODO index.html line 22 fonts clean-up font-weight. keep 400 & 700 only DONE
-TODO index.html line 59
 TODO index.html About Section where is the image? Left column should have remained with an image as a child. DONE
 TODO solidarity.html why is team here? DONE
-TODO aksies allagh eikonidiou se tik
+TODO aksies allagh eikonidiou se ticks DONE
 -->
-
 
 
 <!DOCTYPE html>
@@ -33,28 +31,23 @@ TODO aksies allagh eikonidiou se tik
     <meta name="theme-color" content="#ffffff">
 
 
-<!-- TODO fonts clean-up -->
+    <!-- TODO fonts clean-up DONE-->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- TODO Clean dependencies-->
     <!-- Vendor CSS Files -->
-<!--    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
 
-<!-- TODO ftiakse ena neo stylesheet bootstrap_custom.scss  -->
 
-    <!--    TODO Why so many icon libs 1? -->
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"> <!--scroll to top button icon-->
-    <!--    TODO Why so many icon libs 2? https://icomoon.io/app/#/select-->
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> <!--Social Icons footer bar-->
+    <!--    TODO Why so many icon libs 1? I left icofont because i could not fine a similar icon and icomoon -->
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <!--    TODO Why so many icon libs 3? -->
-
     <!-- Template Main CSS File -->
-<!--<link href="./assets/css/styles.css" rel="stylesheet">-->
-
     <link href="./assets/css/bootstrap_custom.min.css" rel="stylesheet">
-
+    <!-- Main Icon Lib -->
+    <link href="assets/vendor/icomoon/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -64,16 +57,17 @@ TODO aksies allagh eikonidiou se tik
     <div class="container d-flex">
 
         <div class="contact-info mr-auto">
-            <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-            <i class="icofont-phone"></i> +1 5589 55488 55
-            <i class="icofont-google-map"></i> A108 Adam Street, NY
+            <i class="icon-envelop"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+            <i class="icon-phone"></i> +1 5589 55488 55
+            <i class="icon-location2"></i> A108 Adam Street, NY
+
         </div>
         <div class="social-links">
-            <a href="#" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
-            <a href="#" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
-            <a href="#" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
-            <a href="#" target="_blank" class="skype"><i class="icofont-skype"></i></a>
-            <a href="#" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            <a href="#" target="_blank" class="twitter"><i class="icon-twitter"></i></a>
+            <a href="#" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
+            <a href="#" target="_blank" class="instagram"><i class="icon-instagram"></i></a>
+            <a href="#" target="_blank" class="skype"><i class="icon-skype"></i></a>
+            <a href="#" target="_blank" class="linkedin"><i class="icofon-linkedin"></i></i></a>
         </div>
     </div>
 </div>
@@ -81,7 +75,7 @@ TODO aksies allagh eikonidiou se tik
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-         <a href="index.html" class="logo mr-auto"><img src="assets/img/brand_logo.svg" alt="..." class="img-fluid"></a>
+        <a href="index.html" class="logo mr-auto"><img src="assets/img/brand_logo.svg" alt="..." class="img-fluid"></a>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
@@ -99,7 +93,7 @@ TODO aksies allagh eikonidiou se tik
         </nav>
         <!-- .nav-menu -->
 
-<a href="volunteer.html" class="appointment-btn scrollto">Volunteer</a>
+        <a href="volunteer.html" class="appointment-btn scrollto">Volunteer</a>
 
     </div>
 </header>
@@ -176,30 +170,38 @@ TODO aksies allagh eikonidiou se tik
             <div class="row">
                 <div class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch">
 
-                    <img class="about-img" src="./assets/img/about.jpg" />
+                    <img class="about-img" src="./assets/img/about.jpg"/>
 
                 </div>
 
                 <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
                     <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                    <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+                    <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima
+                        temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam
+                        sint et id nulla tenetur. Suscipit aut voluptate.</p>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                        <div class="icon"><i class="icon-checkmark2"></i>
+                            </i></div>
                         <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
                     </div>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <div class="icon"><i class="icon-checkmark2"></i>
+                            </i></div>
                         <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque</p>
                     </div>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-atom"></i></div>
+                        <div class="icon"><i class="icon-checkmark2"></i>
+                            </i></div>
                         <h4 class="title"><a href="">Dine Pad</a></h4>
-                        <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                        <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis
+                            odit. Sunt aut deserunt minus aut eligendi omnis</p>
                     </div>
 
                 </div>
@@ -274,6 +276,7 @@ TODO aksies allagh eikonidiou se tik
         </div>
     </section>
     <!-- End Doctors Section -->
+<!--    TODO allakse ta eikonidia twn erwthmatikwn??-->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -289,10 +292,10 @@ TODO aksies allagh eikonidiou se tik
             <div class="faq-list">
                 <ul>
                     <li data-aos="fade-up">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
+                        <i class="bx bx-help-circle icon-question"></i> <a data-toggle="collapse" class="collapse"
                                                                        href="#faq-list-1">Non consectetur a erat nam at
-                        lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
+                        lectus urna duis? <i class="bx bx-chevron-down icon-circle-down"></i><i
+                                class="bx bx-chevron-up icon-circle-up"></i></a>
                         <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
                             <p>
                                 Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
@@ -303,10 +306,10 @@ TODO aksies allagh eikonidiou se tik
                     </li>
 
                     <li data-aos="fade-up" data-aos-delay="100">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
+                        <i class="bx bx-help-circle icon-question"></i> <a data-toggle="collapse" href="#faq-list-2"
                                                                        class="collapsed">Feugiat scelerisque varius
-                        morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
+                        morbi enim nunc? <i class="bx bx-chevron-down icon-circle-down"></i><i
+                                class="bx bx-chevron-up icon-circle-up"></i></a>
                         <div id="faq-list-2" class="collapse" data-parent=".faq-list">
                             <p>
                                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
@@ -318,10 +321,10 @@ TODO aksies allagh eikonidiou se tik
                     </li>
 
                     <li data-aos="fade-up" data-aos-delay="200">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
+                        <i class="bx bx-help-circle icon-question"></i> <a data-toggle="collapse" href="#faq-list-3"
                                                                        class="collapsed">Dolor sit amet consectetur
-                        adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
+                        adipiscing elit? <i class="bx bx-chevron-down icon-circle-down"></i><i
+                                class="bx bx-chevron-up icon-circle-up"></i></a>
                         <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                             <p>
                                 Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
@@ -333,10 +336,10 @@ TODO aksies allagh eikonidiou se tik
                     </li>
 
                     <li data-aos="fade-up" data-aos-delay="300">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"
+                        <i class="bx bx-help-circle icon-question"></i> <a data-toggle="collapse" href="#faq-list-4"
                                                                        class="collapsed">Tempus quam pellentesque nec
-                        nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
-                                class="bx bx-chevron-up icon-close"></i></a>
+                        nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-circle-down"></i><i
+                                class="bx bx-chevron-up icon-circle-up"></i></a>
                         <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                             <p>
                                 Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
@@ -347,10 +350,11 @@ TODO aksies allagh eikonidiou se tik
                     </li>
 
                     <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"
+                        <i class="bx bx-help-circle icon-question"></i> <a data-toggle="collapse" href="#faq-list-5"
                                                                        class="collapsed">Tortor vitae purus faucibus
                         ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                class="bx bx-chevron-down icon-circle-down"></i><i
+                                class="bx bx-chevron-up icon-circle-up"></i></a>
                         <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                             <p>
                                 Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
@@ -372,35 +376,35 @@ TODO aksies allagh eikonidiou se tik
 
 <!--edw ta banners apo to medi-->
 <div class="Emergency_contact">
-  <div class="Emergency_contact_inner ">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-lg-6">
-          <div class="single_emergency">
-            <div class="info">
-              <span>We are here for you</span>
-              <h3>Book Appointment</h3>
+    <div class="Emergency_contact_inner ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="single_emergency">
+                        <div class="info">
+                            <span>We are here for you</span>
+                            <h3>Book Appointment</h3>
+                        </div>
+                        <div class="info_button">
+                            <a href="#" class="boxed-btn3-white">Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="single_emergency align-items-center d-flex justify-content-end">
+                        <div class="icon">
+                            <i class="flaticon-call"></i>
+                        </div>
+                        <div class="info">
+                            <span>Emergency Medical Care</span>
+                            <h3>+1-465 4545</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="info_button">
-              <a href="#" class="boxed-btn3-white">Book Appointment
-              </a>
-            </div>
-          </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <div class="single_emergency align-items-center d-flex justify-content-end">
-            <div class="icon">
-              <i class="flaticon-call"></i>
-            </div>
-            <div class="info">
-              <span>Emergency Medical Care</span>
-              <h3>+1-465 4545</h3>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <!-- ======= Footer ======= -->
@@ -471,16 +475,16 @@ TODO aksies allagh eikonidiou se tik
             </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="#" target="_blank"  class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank" class="twitter"><i class="icon-twitter"></i></a>
+            <a href="#" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
+            <a href="#" target="_blank" class="instagram"><i class="icon-instagram"></i></a>
+            <a href="#" target="_blank" class="linkedin"><i class="icon-linkedin2"></i></a>
         </div>
     </div>
 </footer><!-- End Footer -->
 
 <div id="preloader"></div>
-<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+<a href="#" class="back-to-top"><i class="icon-circle-up"></i></a>
 
 <!-- Vendor JS Files -->
 <!-- TODO Clean dependencies-->
@@ -488,9 +492,6 @@ TODO aksies allagh eikonidiou se tik
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/venobox/venobox.min.js"></script>
 <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-
-
-
 
 
 <!-- Template Main JS File -->
