@@ -1,11 +1,11 @@
 /* Start Blog Area css
 ============================================================================================ */
-@import 'bootstrap_custom';
+//@import 'bootstrap_custom';
 @import "variables";
 
 
 // fonts
-$font-1:  $font-family-sans-serif;
+$font-1:  $font-family;
 $heading_color2: #ff8b23;
 $btn_bg: #009DFF;
 $white_color:#fff;
@@ -324,7 +324,7 @@ $white_color:#fff;
 
     h4 {
       // color: $title-color;
-      font-family: $font-family-sans-serif;
+      font-family: $font-family;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
@@ -353,7 +353,7 @@ $white_color:#fff;
       line-height: 50px;
       // background: $title-color;
       color: #fff;
-      font-family: $font-family-sans-serif;
+      font-family: $font-family;
       font-size: 14px;
       font-weight: 500;
 

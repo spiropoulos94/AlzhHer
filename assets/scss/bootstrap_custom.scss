@@ -1,8 +1,9 @@
-//TODO ftiakse ena neo stylesheet bootstrap_custom.scss pou tha ftiaksei ena bootstrap_custom.min.css (theming)
+//TODO ftiakse ena neo stylesheet bootstrap_custom.scss pou tha ftiaksei ena bootstrap_custom.min.css (theming) DONE
 
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "styles";
+@import "blog.scss";
 
 
 
