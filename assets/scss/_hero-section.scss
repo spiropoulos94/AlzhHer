@@ -44,6 +44,9 @@
   transition: 0.5s;
   color: #fff;
   background: $secondary;
+  a {
+    color: white;
+  }
 }
 
 #hero .btn-get-started:hover {

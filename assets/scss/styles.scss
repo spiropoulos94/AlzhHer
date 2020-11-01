@@ -1,11 +1,11 @@
 // global stylesheet for header and footer
 
 @import "./variables.scss";
-
+@import "cta-homepage"; //used in footer
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import "cta-homepage"; //used in footer
+
 
 
 body {
@@ -315,6 +315,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
+  a {
+    color: white;
+  }
 }
 
 .appointment-btn:hover {
