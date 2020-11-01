@@ -12,7 +12,7 @@
 
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: $primary;
   float: left;
   width: 44px;
   height: 44px;
@@ -44,7 +44,7 @@
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1977cc;
+  background: $primary;
   color: #fff;
 }
 

@@ -2,6 +2,8 @@
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
+@import "variables";
+
 .doctors {
   background: #fff;
 }
@@ -35,7 +37,7 @@
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #2c4964;
+  color: $primary;
 }
 
 .doctors .member span {
@@ -87,5 +89,5 @@
 }
 
 .doctors .member .social a:hover {
-  background: #1977cc;
+  background: $primary;
 }

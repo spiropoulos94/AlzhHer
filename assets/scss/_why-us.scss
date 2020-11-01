@@ -2,9 +2,11 @@
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+@import "variables";
+
 .why-us .content {
   padding: 30px;
-  background: #1977cc;
+  background: $primary;
   border-radius: 4px;
   color: #fff;
 }
@@ -33,7 +35,7 @@
 }
 
 .why-us .content .more-btn:hover {
-  color: #1977cc;
+  color: $primary;
   background: #fff;
 }
 
@@ -48,7 +50,7 @@
 
 .why-us .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #1977cc;
+  color: $primary;
   margin-bottom: 30px;
 }
 

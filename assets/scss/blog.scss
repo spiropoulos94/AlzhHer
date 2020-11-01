@@ -50,20 +50,15 @@ $white_color:#fff;
   }
 
   h4 {
-    //  @include transform_time(.5s);
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 34px;
     margin-bottom: 25px;
   }
 
   a {
-    // color: $dip;
     font-size: 20px;
     font-weight: 600;
 
-    &:hover {
-      // // color: $baseColor;
-    }
   }
 
   .date {
@@ -75,7 +70,6 @@ $white_color:#fff;
   }
 
   .tag {
-    // color: $baseColor;
     text-align: left;
     display: inline-block;
     float: left;
@@ -167,12 +161,6 @@ $white_color:#fff;
     visibility: hidden;
     @include transform_time(.5s);
 
-    .meta-bottom {
-      p {
-        // color: $white_color;
-      }
-    }
-
     @media (min-width: 992px) {
       bottom: 100px;
     }
@@ -185,13 +173,9 @@ $white_color:#fff;
   }
 
   a {
-    // color: $white_color;
     font-size: 20px;
     font-weight: 600;
 
-    &:hover {
-      // color: $baseColor;
-    }
   }
 
   .date {
@@ -216,10 +200,8 @@ $white_color:#fff;
 /* Latest Blog Area css
 ============================================================================================ */
 
-.latest_blog_inner {}
 
 .l_blog_item {
-  .l_blog_img {}
 
   .l_blog_text {
     .date {
@@ -250,108 +232,107 @@ $white_color:#fff;
 /* End Latest Blog Area css
 ============================================================================================ */
 
-
-/* Causes Area css
-============================================================================================ */
-.causes_area {}
-
-.causes_slider {
-  .owl-dots {
-    text-align: center;
-    margin-top: 80px;
-
-    .owl-dot {
-      height: 14px;
-      width: 14px;
-      background: #eeeeee;
-      display: inline-block;
-      margin-right: 7px;
-
-      &:last-child {
-        margin-right: 0px;
-      }
-
-      &.active {
-      }
-    }
-  }
-}
-
-.causes_item {
-  background: #fff;
-
-  .causes_img {
-    position: relative;
-
-    .c_parcent {
-      position: absolute;
-      bottom: 0px;
-      width: 100%;
-      left: 0px;
-      height: 3px;
-      background: rgba(255, 255, 255, .5);
-
-      span {
-        width: 70%;
-        height: 3px;
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-
-        &:before {
-          content: "75%";
-          position: absolute;
-          right: -10px;
-          bottom: 0px;
-          color: #fff;
-          padding: 0px 5px;
-        }
-      }
-    }
-  }
-
-  .causes_text {
-    padding: 30px 35px 40px 30px;
-
-    h4 {
-      // color: $title-color;
-      font-family: $font-family;
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 15px;
-      cursor: pointer;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 300;
-      margin-bottom: 0px;
-    }
-  }
-
-  .causes_bottom {
-    a {
-      width: 50%;
-      border: 1px solid;
-      text-align: center;
-      float: left;
-      line-height: 50px;
-      // background: $title-color;
-      color: #fff;
-      font-family: $font-family;
-      font-size: 14px;
-      font-weight: 500;
-
-      &+a {
-        border-color: #eeeeee;
-        background: #fff;
-        font-size: 14px;
-        // color: $title-color;
-      }
-    }
-  }
-}
+//
+///* Causes Area css
+//============================================================================================ */
+//
+//.causes_slider {
+//  .owl-dots {
+//    text-align: center;
+//    margin-top: 80px;
+//
+//    .owl-dot {
+//      height: 14px;
+//      width: 14px;
+//      background: #eeeeee;
+//      display: inline-block;
+//      margin-right: 7px;
+//
+//      &:last-child {
+//        margin-right: 0px;
+//      }
+//
+//      &.active {
+//      }
+//    }
+//  }
+//}
+//
+//.causes_item {
+//  background: #fff;
+//
+//  .causes_img {
+//    position: relative;
+//
+//    .c_parcent {
+//      position: absolute;
+//      bottom: 0px;
+//      width: 100%;
+//      left: 0px;
+//      height: 3px;
+//      background: rgba(255, 255, 255, .5);
+//
+//      span {
+//        width: 70%;
+//        height: 3px;
+//        position: absolute;
+//        left: 0px;
+//        bottom: 0px;
+//
+//        &:before {
+//          content: "75%";
+//          position: absolute;
+//          right: -10px;
+//          bottom: 0px;
+//          color: #fff;
+//          padding: 0px 5px;
+//        }
+//      }
+//    }
+//  }
+//
+//  .causes_text {
+//    padding: 30px 35px 40px 30px;
+//
+//    h4 {
+//      // color: $title-color;
+//      font-family: $font-family;
+//      font-size: 18px;
+//      font-weight: 600;
+//      margin-bottom: 15px;
+//      cursor: pointer;
+//    }
+//
+//    p {
+//      font-size: 14px;
+//      line-height: 24px;
+//      font-weight: 300;
+//      margin-bottom: 0px;
+//    }
+//  }
+//
+//  .causes_bottom {
+//    a {
+//      width: 50%;
+//      border: 1px solid;
+//      text-align: center;
+//      float: left;
+//      line-height: 50px;
+//      // background: $title-color;
+//      color: #fff;
+//      font-family: $font-family;
+//      font-size: 14px;
+//      font-weight: 500;
+//
+//      &+a {
+//        border-color: #eeeeee;
+//        background: #fff;
+//        font-size: 14px;
+//        // color: $title-color;
+//      }
+//    }
+//  }
+//}
 
 /* End Causes Area css
 ============================================================================================ */
@@ -411,10 +392,6 @@ $white_color:#fff;
     padding: 1px 18px;
     text-align: center;
 
-    // color: $title-color;
-    &:before {
-      // background: $title-color;
-    }
 
     &+.tag_btn {
       margin-left: 2px;
@@ -468,15 +445,6 @@ $white_color:#fff;
       text-transform: uppercase;
       color: #fff;
       position: relative;
-      //          &:before{
-      //              content: "";
-      //              height: 1px;
-      //              width: 100%;
-      //              background: #fff;
-      //              position: absolute;
-      //              bottom: 0px;
-      //              left: 0px;
-      //          }
     }
 
     p {
@@ -565,7 +533,6 @@ $white_color:#fff;
 
   &::after {
     content: "";
-    display: block;
     clear: both;
     display: table;
   }

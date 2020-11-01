@@ -41,7 +41,7 @@
   position: absolute;
   right: 0;
   left: 20px;
-  color: #76b5ee;
+  color: $primary;
 }
 
 .faq .faq-list .icon-circle-down, .faq .faq-list .icon-circle-up {
@@ -65,7 +65,7 @@
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1977cc;
+  color: $primary;
 }
 
 .faq .faq-list a.collapsed .icon-circle-down {
