@@ -32,27 +32,15 @@
 }
 
 #hero .btn-get-started {
-  font-family: $font-family;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 35px;
   margin-top: 30px;
-  border-radius: 50px;
   transition: 0.5s;
-  color: #fff;
-  background: $secondary;
-  a {
-    color: white;
-  }
 }
 
-
-#hero .btn-get-started:hover {
-  background: $primary;
-}
 
 @media (min-width: 1024px) {
   #hero {
